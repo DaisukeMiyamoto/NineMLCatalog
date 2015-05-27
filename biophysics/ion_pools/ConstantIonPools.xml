@@ -9,7 +9,7 @@
     <Dimension name="temperature" k="1"/>
     <Dimension name="currentDensity" i="1" l="-2"/>
     <Dimension name="concentration" l="-3" n="1"/>
-    <ComponentClass name="ConstantIonPools">
+    <DynamicsClass name="ConstantIonPools">
         <Parameter name="e_reversal" dimension="voltage"/>
         <AnalogPort mode="recv" name="g" dimension="conductanceDensity"/>
         <AnalogPort mode="recv" name="v" dimension="voltage"/>
@@ -19,5 +19,5 @@
                 <MathInline>g * (v - e_reversal)</MathInline>
             </Alias>
         </Dynamics>
-    </ComponentClass>
+    </DynamicsClass>
 </NineML>

@@ -8,7 +8,7 @@
   <Dimension name="conductanceDensity" m="-1" l="-4" t="3" i="2"/>
   <Dimension name="temperature" k="1"/>
   <Dimension name="currentDensity" i="1" l="-2"/>
-  <ComponentClass name="KCadef">
+  <DynamicsClass name="KCadef">
     <Parameter name="Aalpha" dimension="per_time"/>
     <Parameter name="Balpha" dimension="concentration"/>
     <Parameter name="Kalpha" dimension="voltage"/>
@@ -49,5 +49,5 @@
           Kbeta))))) </MathInline>
       </Alias>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
 </NineML>

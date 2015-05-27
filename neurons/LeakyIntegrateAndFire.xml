@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <NineML xmlns="http://nineml.incf.org/9ML/0.3">
-  <ComponentClass name="LeakyIntegrateAndFire">
+  <DynamicsClass name="LeakyIntegrateAndFire">
     <AnalogSendPort name="V" dimension="voltage"/>
     <AnalogReducePort operator="+" name="ISyn" dimension="current"/>
     <EventSendPort name="spikeoutput"/>
@@ -41,7 +41,7 @@
       <StateVariable dimension="voltage" name="V"/>
       <StateVariable dimension="time" name="tspike"/>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
   <Dimension name="time" t="1"/>
   <Dimension name="voltage" m="1" l="2" t="-3" i="-1"/>
   <Dimension name="conductanceDensity" m="-1" l="-4" t="3" i="2"/>

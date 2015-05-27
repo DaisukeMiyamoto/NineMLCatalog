@@ -8,7 +8,7 @@
   <Dimension name="conductanceDensity" m="-1" l="-4" t="3" i="2"/>
   <Dimension name="temperature" k="1"/>
   <Dimension name="currentDensity" i="1" l="-2"/>
-  <ComponentClass name="Kv_A">
+  <DynamicsClass name="Kv_A">
     <Parameter name="Aalpha_a" dimension="per_time"/>
     <Parameter name="Kalpha_a" dimension="voltage"/>
     <Parameter name="V0alpha_a" dimension="voltage"/>
@@ -78,5 +78,5 @@
         <MathInline>Q10 * Abeta_b * sigm((v - V0beta_b) Kbeta_b)</MathInline>
       </Alias>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
 </NineML>

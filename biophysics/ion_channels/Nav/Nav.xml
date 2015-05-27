@@ -8,7 +8,7 @@
   <Dimension name="conductanceDensity" m="-1" l="-4" t="3" i="2"/>
   <Dimension name="temperature" k="1"/>
   <Dimension name="currentDensity" i="1" l="-2"/>
-  <ComponentClass name="NavNernst" xmlns="http://nineml.incf.org/9ML/0.3">
+  <DynamicsClass name="NavNernst" xmlns="http://nineml.incf.org/9ML/0.3">
     <Parameter name="gbar" dimension="conductanceDensity"/>
     <Parameter name="Aalpha_m" dimension="per_time"/>
     <Parameter name="Kalpha_m" dimension="voltage"/>
@@ -105,5 +105,5 @@
         <MathInline>1 / (alpha_h + beta_h)</MathInline>
       </Alias>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
 </NineML>

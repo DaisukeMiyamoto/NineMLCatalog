@@ -8,7 +8,7 @@
   <Dimension name="conductanceDensity" m="-1" l="-4" t="3" i="2"/>
   <Dimension name="temperature" k="1"/>
   <Dimension name="currentDensity" i="1" l="-2"/>
-  <ComponentClass name="Cav_LA">
+  <DynamicsClass name="Cav_LA">
     <Parameter name="gbar" dimension="conductanceDensity"/>    
     <Parameter name="shift" dimension="voltage"/>
     <Parameter name="v0_m_inf" dimension="voltage"/>
@@ -75,5 +75,5 @@
         </MathInline>
       </Alias>      
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
 </NineML>

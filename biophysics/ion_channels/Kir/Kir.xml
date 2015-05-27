@@ -8,7 +8,7 @@
   <Dimension name="conductanceDensity" m="-1" l="-4" t="3" i="2"/>
   <Dimension name="temperature" k="1"/>
   <Dimension name="currentDensity" i="1" l="-2"/>
-  <ComponentClass name="Kirdef">
+  <DynamicsClass name="Kirdef">
     <Parameter name="Aalpha_d" dimension="per_time"/>
     <Parameter name="Kalpha_d" dimension="voltage"/>
     <Parameter name="V0alpha_d" dimension="voltage"/>
@@ -56,5 +56,5 @@
         </Alias>
       </Regime>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
 </NineML>

@@ -7,7 +7,7 @@
       them all as dimensionless.
     </Comment>
   </Annotations>
-  <ComponentClass name="GuetigSTDP">
+  <DynamicsClass name="GuetigSTDP">
     <Parameter name="mu" dimension="dimensionless"/>
     <Parameter name="alpha" dimension="dimensionless"/>
     <Parameter name="tau_minus" dimension="dimensionless"/>
@@ -46,6 +46,6 @@
         </OnEvent>
       </Regime>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
   <Dimension name="dimensionless"/>
 </NineML>

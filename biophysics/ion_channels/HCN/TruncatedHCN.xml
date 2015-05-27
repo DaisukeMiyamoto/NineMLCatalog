@@ -9,7 +9,7 @@
     <Dimension name="temperature" k="1"/>
     <Dimension name="currentDensity" i="1" l="-2"/>
     <Dimension name="concentration" l="-3" n="1"/>
-    <ComponentClass name="TruncatedHCN"
+    <DynamicsClass name="TruncatedHCN"
                     xmlns="http://nineml.incf.org/9ML/0.3">
         <Parameter name="gbar" dimension="conductanceDensity"/>
         <Parameter name="e_reversal" dimension="voltage"/>
@@ -91,5 +91,5 @@
                 <MathInline>(rA * v) + rB</MathInline>
             </Alias>
         </Dynamics>
-    </ComponentClass>
+    </DynamicsClass>
 </NineML>

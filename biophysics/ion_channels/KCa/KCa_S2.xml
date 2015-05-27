@@ -8,7 +8,7 @@
   <Dimension name="temperature" k="1"/>
   <Dimension name="currentDensity" i="1" l="-2"/>
   <Dimension name="concentration" l="-3" n="1"/>
-  <ComponentClass name="SK2def">
+  <DynamicsClass name="SK2def">
     <Parameter name="diff" dimension="concentration"/>
     <Parameter name="invc1"/>
     <Parameter name="invc2"/>
@@ -131,5 +131,5 @@
         </Alias>
       </Regime>
     </Dynamics>
-  </ComponentClass>
+  </DynamicsClass>
 </NineML>
