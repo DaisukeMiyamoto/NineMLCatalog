@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<NineML xmlns="http://nineml.incf.org/9ML/0.3">
+<NineML xmlns="http://nineml.net/9ML/1.0">
   <ComponentClass name="LeakyIAF">
-    <AnalogPort mode="send" name="V"/>
+    <AnalogSendPort name="V"/>
     <AnalogPort mode="reduce" operator="+" name="Isyn"/>
     <EventPort mode="send" name="spikeoutput"/>
     <Parameter dimension="" name="C"/>
@@ -10,7 +10,7 @@
     <Parameter dimension="" name="theta"/>
     <Parameter dimension="" name="gL"/>
     <Parameter dimension="" name="t_ref"/>
-    <Dynamics>
+    
       <Regime name="subthreshold_regime">
         <TimeDerivative variable="V">
           <MathInline>(-gL*(V-vL) + Isyn)/C</MathInline>

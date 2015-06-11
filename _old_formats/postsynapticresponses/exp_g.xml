@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<NineML xmlns="http://nineml.incf.org/9ML/0.3">
+<NineML xmlns="http://nineml.net/9ML/1.0">
   <ComponentClass name="CobaSyn">
-    <AnalogPort mode="recv" name="V"/>
-    <AnalogPort mode="send" name="I"/>
+    <AnalogReceivePort name="V"/>
+    <AnalogSendPort name="I"/>
     <EventPort mode="recv" name="spikeinput"/>
     <Parameter dimension="" name="tau"/>
     <Parameter dimension="" name="q"/>
     <Parameter dimension="" name="vrev"/>
-    <Dynamics>
+    
       <Regime name="cobadefaultregime">
         <TimeDerivative variable="g">
           <MathInline>-g/tau</MathInline>

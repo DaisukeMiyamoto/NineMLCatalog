@@ -21,10 +21,10 @@
     <Parameter name="dirc3"/>
     <Parameter name="dirc4"/>
     <Parameter name="gbar" dimension="conductanceDensity"/>
-    <AnalogPort mode="recv" name="temperature" dimension="temperature"/>
-    <AnalogPort mode="send" name="g" dimension="conductanceDensity"/>
-    <AnalogPort mode="recv" name="internalCa" dimension="currentDensity"/>    
-    <Dynamics>
+    <AnalogReceivePort name="temperature" dimension="temperature"/>
+    <AnalogSendPort name="g" dimension="conductanceDensity"/>
+    <AnalogReceivePort name="internalCa" dimension="currentDensity"/>    
+    
       <Alias name="i">
         <MathInline>gbar * (o1 + o2)(v - e_revseral)</MathInline>
       </Alias>

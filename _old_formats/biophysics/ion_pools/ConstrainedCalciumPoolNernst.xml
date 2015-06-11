@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NineML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://nineml.incf.org/9ML/0.3"
+  xmlns="http://nineml.net/9ML/1.0"
   xsi:schemaLocation="http://nineml.incf.org/9ML/NineML_v0.3.xsd">
   <Dimension name="per_time" t="-1"/>
   <Dimension name="voltage" m="1" l="2" t="-3" i="-1"/>  
@@ -14,12 +14,12 @@
     <Parameter name="steadyStateInternalC" dimension="concentration"/>
     <Parameter name="externalC" dimension="concentration"/>
     <Parameter name="beta" dimension="per_time"/>
-    <AnalogPort mode="recv" name="g" dimension="conductanceDensity"/>
-    <AnalogPort mode="recv" name="temperature" dimension="temperature"/>
-    <AnalogPort mode="recv" name="v" dimension="voltage"/>
-    <AnalogPort mode="send" name="i" dimension="currentDensity"/>
-    <AnalogPort mode="send" name="internalC" dimension="concentration"/>
-    <Dynamics>
+    <AnalogReceivePort name="g" dimension="conductanceDensity"/>
+    <AnalogReceivePort name="temperature" dimension="temperature"/>
+    <AnalogReceivePort name="v" dimension="voltage"/>
+    <AnalogSendPort name="i" dimension="currentDensity"/>
+    <AnalogSendPort name="internalC" dimension="concentration"/>
+    
       <StateVariable name="internalC">
         <Initial>steadyStateInternal</Initial>
       </StateVariable>

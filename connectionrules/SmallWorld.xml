@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ConnectionRuleClass name="SmallWorld">
+<ConnectionRule name="SmallWorld">
   <Parameter name="k" dimension="dimensionless"/>  
   <Parameter name="mu1" dimension="dimensionless" container="source"/>
   <Parameter name="sigma1" dimension="dimensionless" container="source"/>
@@ -39,4 +39,4 @@
       <un:variance>sigma2</un:variance>
     </un:NormalDistribution>
   </RandomVariable>
-</ConnectionRuleClass>
+</ConnectionRule>

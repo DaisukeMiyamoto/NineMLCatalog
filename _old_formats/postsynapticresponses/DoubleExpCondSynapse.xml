@@ -12,7 +12,7 @@
     <AnalogReceivePort name="v" dimension="voltage"/>
     <AnalogSendPort name="i" dimension="current"/>
     <EventReceivePort name="spike"/>
-    <Dynamics>
+    
       <StateVariable name="g1" dimension="conductanceDensity"/>
       <StateVariable name="g2" dimension="conductanceDensity"/>
       <Regime>

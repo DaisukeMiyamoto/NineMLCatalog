@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NineML xmlns="http://nineml.incf.org/9ML/0.3" 
+<NineML xmlns="http://nineml.net/9ML/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://nineml.incf.org/9ML/0.3../NineML_h0.3.xsd">
+    xsi:schemaLocation="http://nineml.net/9ML/1.0../NineML_h0.3.xsd">
     <Dimension name="per_time" t="-1"/>
     <Dimension name="voltage" m="1" l="2" t="-3" i="-1"/>  
     <Dimension name="temperature" k="1"/>
@@ -15,7 +15,7 @@
         <Parameter name="C" dimension="specificCapacitance"/>
         <Parameter name="diameter" dimension="length"/>
         <Parameter name="initialVoltage" dimension="voltage"/>
-        <AnalogPort mode="recv" name="temperature" dimension="temperature"/>
+        <AnalogReceivePort name="temperature" dimension="temperature"/>
         <EventPort name="spike" mode="send"/>
         <Component name="Nav">
             <Definition link="../ion_channels/Nav/Nav.xml">
@@ -88,7 +88,7 @@
                 <Value units="mM">2.0</Value>
             </Property>            
         </Component>        
-        <Dynamics>
+        
             <StateVariable name="v" dimension="voltage">
                 <Initial>initialVoltage</Initial>
             </StateVariable>         
