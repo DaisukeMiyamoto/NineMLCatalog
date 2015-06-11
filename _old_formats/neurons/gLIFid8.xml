@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <NineML xmlns="http://nineml.incf.org/9ML/0.1">
   <Component name="gLIFid8">
-    <Parameter name="Vth"/>
-    <Parameter name="Vrest"/>
-    <Parameter name="Cm"/>
-    <Parameter name="Rm"/>
+    <Parameter name="Vth" dimension="dimensionless"/>
+    <Parameter name="Vrest" dimension="dimensionless"/>
+    <Parameter name="Cm" dimension="dimensionless"/>
+    <Parameter name="Rm" dimension="dimensionless"/>
     <AnalogSendPort name="V"/>
     <analog-port symbol="Isyn" mode="reduce" op="+"/>
     <AnalogSendPort name="tspike"/>

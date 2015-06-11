@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <NineML xmlns="http://nineml.incf.org/9ML/0.1">
   <Component name="GuetigSTDP">
-    <Parameter name="mu"/>
-    <Parameter name="alpha"/>
-    <Parameter name="tau_minus"/>
-    <Parameter name="learning_rate"/>
-    <Parameter name="tau_plus"/>
+    <Parameter name="mu" dimension="dimensionless"/>
+    <Parameter name="alpha" dimension="dimensionless"/>
+    <Parameter name="tau_minus" dimension="dimensionless"/>
+    <Parameter name="learning_rate" dimension="dimensionless"/>
+    <Parameter name="tau_plus" dimension="dimensionless"/>
     <AnalogSendPort name="W"/>
     <AnalogSendPort name="r"/>
     <AnalogSendPort name="o"/>

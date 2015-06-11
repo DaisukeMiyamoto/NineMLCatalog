@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <NineML xmlns="http://nineml.incf.org/9ML/0.1">
   <Component name="Izhikevich">
-    <Parameter name="V"/>
-    <Parameter name="U"/>
-    <Parameter name="t"/>
-    <Parameter name="spike"/>
-    <Parameter name="Isyn"/>
-    <Parameter name="a"/>
-    <Parameter name="b"/>
-    <Parameter name="c"/>
-    <Parameter name="d"/>
-    <Parameter name="theta"/>
+    <Parameter name="V" dimension="dimensionless"/>
+    <Parameter name="U" dimension="dimensionless"/>
+    <Parameter name="t" dimension="dimensionless"/>
+    <Parameter name="spike" dimension="dimensionless"/>
+    <Parameter name="Isyn" dimension="dimensionless"/>
+    <Parameter name="a" dimension="dimensionless"/>
+    <Parameter name="b" dimension="dimensionless"/>
+    <Parameter name="c" dimension="dimensionless"/>
+    <Parameter name="d" dimension="dimensionless"/>
+    <Parameter name="theta" dimension="dimensionless"/>
     <sequence name="subthreshold_regime">
       <union name="Regime0">
         <ode bound_variable="t" name="V_equation" dependent_variable="V">

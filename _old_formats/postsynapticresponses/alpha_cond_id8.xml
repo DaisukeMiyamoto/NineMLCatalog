@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <NineML xmlns="http://nineml.incf.org/9ML/0.1">
   <Component name="alpha_cond_id8">
-    <Parameter name="E"/>
-    <Parameter name="tau_a"/>
+    <Parameter name="E" dimension="dimensionless"/>
+    <Parameter name="tau_a" dimension="dimensionless"/>
     <AnalogReceivePort name="W"/>
     <AnalogSendPort name="g"/>
     <AnalogSendPort name="g_a"/>
